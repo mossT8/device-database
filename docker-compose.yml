@@ -14,7 +14,7 @@ services:
       timeout: 10s
       retries: 15
     networks:
-      - vas
+      - local
 
   liquibase:
     build:
@@ -24,11 +24,11 @@ services:
     tty: true
     stdin_open: true
     networks:
-      - vas
+      - local
     depends_on:
       database:
         condition: service_healthy
 
 networks:
-  vas:
-    name: vas
+  local:
+    name: local

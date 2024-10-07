@@ -3,7 +3,7 @@ MySQL and Liquibase project which seeds a database locally and for possible depl
 
 
 ## UML Diagram
-*To do: Add UML Diagram*
+![Database UML Diagram](./documentation/ERD.drawio.png)
 
 ## Local Setup
 To set up the database locally, follow these steps:
